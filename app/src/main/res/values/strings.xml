@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WebSocketDemoApp</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_disconnect">Disconnect</string>
+</resources>
