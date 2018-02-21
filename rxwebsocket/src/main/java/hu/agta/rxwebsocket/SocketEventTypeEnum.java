@@ -1,4 +1,4 @@
-package hu.agta.websocket.library;
+package hu.agta.rxwebsocket;
 
 
 public enum SocketEventTypeEnum {

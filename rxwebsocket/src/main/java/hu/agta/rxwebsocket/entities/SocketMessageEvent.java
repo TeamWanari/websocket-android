@@ -1,10 +1,10 @@
-package hu.agta.websocket.library.entities;
+package hu.agta.rxwebsocket.entities;
 
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-import hu.agta.websocket.library.SocketEventTypeEnum;
+import hu.agta.rxwebsocket.SocketEventTypeEnum;
 import okio.ByteString;
 
 public class SocketMessageEvent extends SocketEvent {
