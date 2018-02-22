@@ -1,3 +1,5 @@
+![Travis](https://travis-ci.org/TeamWanari/websocket-android.svg?branch=master)
+
 # WebSocket Android Demo App
 
 This repo contains a simple Rx wrapper for OkHttp WebSockets and small demonstration app on how to use it.
