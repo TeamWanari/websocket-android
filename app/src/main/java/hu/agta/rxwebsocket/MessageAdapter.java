@@ -1,4 +1,4 @@
-package hu.agta.websocket;
+package hu.agta.rxwebsocket;
 
 import android.support.v7.widget.RecyclerView;
 import android.util.Pair;
@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-import hu.agta.websocket.library.entities.SocketMessageEvent;
+import hu.agta.rxwebsocket.entities.SocketMessageEvent;
 
 
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHolder> {
@@ -53,8 +53,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
 
         public ViewHolder(View itemView) {
             super(itemView);
-            timeStamp = (TextView) itemView.findViewById(R.id.messageTimeStamp);
-            text = (TextView) itemView.findViewById(R.id.text);
+            timeStamp = itemView.findViewById(R.id.messageTimeStamp);
+            text = itemView.findViewById(R.id.text);
         }
     }
 }

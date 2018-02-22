@@ -1,7 +1,7 @@
-package hu.agta.websocket.library.entities;
+package hu.agta.rxwebsocket.entities;
 
 
-import hu.agta.websocket.library.SocketEventTypeEnum;
+import hu.agta.rxwebsocket.SocketEventTypeEnum;
 
 public class SocketEvent {
 
