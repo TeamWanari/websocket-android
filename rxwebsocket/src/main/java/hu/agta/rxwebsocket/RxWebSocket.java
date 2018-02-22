@@ -1,4 +1,4 @@
-package hu.agta.websocket.library;
+package hu.agta.rxwebsocket;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -6,12 +6,12 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 
-import hu.agta.websocket.library.entities.SocketClosedEvent;
-import hu.agta.websocket.library.entities.SocketClosingEvent;
-import hu.agta.websocket.library.entities.SocketEvent;
-import hu.agta.websocket.library.entities.SocketFailureEvent;
-import hu.agta.websocket.library.entities.SocketMessageEvent;
-import hu.agta.websocket.library.entities.SocketOpenEvent;
+import hu.agta.rxwebsocket.entities.SocketClosedEvent;
+import hu.agta.rxwebsocket.entities.SocketClosingEvent;
+import hu.agta.rxwebsocket.entities.SocketEvent;
+import hu.agta.rxwebsocket.entities.SocketFailureEvent;
+import hu.agta.rxwebsocket.entities.SocketMessageEvent;
+import hu.agta.rxwebsocket.entities.SocketOpenEvent;
 import io.reactivex.BackpressureStrategy;
 import io.reactivex.Flowable;
 import io.reactivex.Single;

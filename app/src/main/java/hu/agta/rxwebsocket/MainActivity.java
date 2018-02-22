@@ -1,4 +1,4 @@
-package hu.agta.websocket;
+package hu.agta.rxwebsocket;
 
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -12,7 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import hu.agta.websocket.library.RxWebSocket;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
@@ -26,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        messageList = (RecyclerView) findViewById(R.id.messageList);
+        messageList = findViewById(R.id.messageList);
         adapter = new MessageAdapter();
         messageList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         messageList.setAdapter(adapter);
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                     Snackbar.make(messageList, "WebSocket failure! " + socketFailureEvent.getException().getMessage(), Snackbar.LENGTH_SHORT).show();
                 }, Throwable::printStackTrace);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(view -> {
             final EditText textInput = new EditText(MainActivity.this);
             textInput.setHint("Some message...");

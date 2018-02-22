@@ -1,4 +1,4 @@
-package hu.agta.websocket.library;
+package hu.agta.rxwebsocket;
 
 
 import android.util.Log;
@@ -6,7 +6,7 @@ import android.util.Log;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 
-import hu.agta.websocket.library.entities.SocketEvent;
+import hu.agta.rxwebsocket.entities.SocketEvent;
 
 public class RxWebSocketLogger implements Subscriber<SocketEvent> {
 

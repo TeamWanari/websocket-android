@@ -1,9 +1,7 @@
-package hu.agta.websocket.library.entities;
+package hu.agta.rxwebsocket.entities;
 
 
-import java.io.IOException;
-
-import hu.agta.websocket.library.SocketEventTypeEnum;
+import hu.agta.rxwebsocket.SocketEventTypeEnum;
 import okhttp3.Response;
 
 public class SocketFailureEvent extends SocketEvent {

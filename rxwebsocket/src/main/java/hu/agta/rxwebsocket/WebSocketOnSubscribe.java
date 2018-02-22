@@ -1,16 +1,15 @@
-package hu.agta.websocket.library;
+package hu.agta.rxwebsocket;
 
 
 import android.support.annotation.NonNull;
 
 import java.util.concurrent.TimeUnit;
 
-import hu.agta.websocket.library.entities.SocketEvent;
+import hu.agta.rxwebsocket.entities.SocketEvent;
 import io.reactivex.FlowableEmitter;
 import io.reactivex.FlowableOnSubscribe;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
-import okhttp3.internal.ws.RealWebSocket;
 
 public class WebSocketOnSubscribe implements FlowableOnSubscribe<SocketEvent> {
 

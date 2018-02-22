@@ -1,11 +1,11 @@
-package hu.agta.websocket.library;
+package hu.agta.rxwebsocket;
 
-import hu.agta.websocket.library.entities.SocketClosedEvent;
-import hu.agta.websocket.library.entities.SocketClosingEvent;
-import hu.agta.websocket.library.entities.SocketEvent;
-import hu.agta.websocket.library.entities.SocketFailureEvent;
-import hu.agta.websocket.library.entities.SocketMessageEvent;
-import hu.agta.websocket.library.entities.SocketOpenEvent;
+import hu.agta.rxwebsocket.entities.SocketClosedEvent;
+import hu.agta.rxwebsocket.entities.SocketClosingEvent;
+import hu.agta.rxwebsocket.entities.SocketEvent;
+import hu.agta.rxwebsocket.entities.SocketFailureEvent;
+import hu.agta.rxwebsocket.entities.SocketMessageEvent;
+import hu.agta.rxwebsocket.entities.SocketOpenEvent;
 import io.reactivex.FlowableEmitter;
 import okhttp3.Response;
 import okhttp3.WebSocket;
