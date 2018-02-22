@@ -1,0 +1,7 @@
+jdk:
+  - oraclejdk8
+before_install:
+   - chmod +x gradlew
+install:
+   - echo "Running a custom install command"
+   - ./gradlew clean install
